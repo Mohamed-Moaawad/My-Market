@@ -1,0 +1,650 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+/*nav*/
+nav{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(#111, #333);
+    color: #fff;
+}
+
+nav .container{
+    width: 100%;
+    height: 100%;
+}
+nav .container .top{
+    width: 85%;
+    margin: auto;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container .top .input{
+    width: 250px;
+    height: 30px;
+    position: relative;
+}
+
+nav .container .top .input input{
+    width: 90%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: rgb(217, 197, 230);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav .container .top .input input:focus{
+    padding-left: 20px;
+    transition: all 0.7s;
+}
+
+nav .container .top span{
+    width: 160px;
+    height: 45px;
+    border: 3px solid rgb(228, 220, 220);
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px;
+}
+
+nav .container .top .icons{
+    width: 100px;
+    height: 30px;
+    position: relative;
+}
+
+nav .container .top .icons i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(107, 105, 105);
+    color: #fff;
+}
+
+nav .container .top .icons i:hover{
+    color: #73648b;
+    cursor: pointer;
+}
+
+nav .container .top .icons div{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #9e00e2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: -19px;
+}
+
+nav .container hr{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+hr{
+    height: 1px;
+    background-color: #dddddd;
+    border: none;
+}
+
+nav .container .links{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container .links a{
+    margin-right: 25px;
+    margin-bottom: 35px;
+    text-decoration: none;
+    color: #dad8d8;
+    font-weight: 550;
+}
+
+nav .container .links a:hover{
+    color: #9900ff;
+}
+/*end nav*/
+/*landing*/
+.landing{
+    width: 100%;
+    height: 90vh;
+    background-color: #A6F3ED;
+}
+
+.landing .container{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 300px) and (max-width: 968px){
+    .landing{
+        height: 150vh;
+    }
+
+    .landing .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing .container .img{
+        padding-top: 90px;
+    }
+}
+
+.landing .container .img{
+    width: 50%;
+    height: 50%;
+    margin-right: 150px;
+}
+
+.landing .container .img img{
+    width: 100%;
+}
+
+.landing .container .text{
+    width: 50%;
+    height: 50%;
+    
+   
+}
+
+.landing .container .text h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.landing .container .text p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.landing .container .text button{
+    width: 120px;
+    height: 40px;
+    background-color: #6d00b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: lighter;
+    margin-top: 35px;
+    transition: all 0.5s;
+}
+button:hover{
+    box-shadow: 5px 5px 10px #575656;
+    cursor: pointer;
+}
+/*end landing*/
+/*iocns*/
+.three{
+    width: 100%;
+    height: 50vh;
+    padding-top: 110px;
+    background-image: linear-gradient(#111, #333);
+    
+}
+
+.three .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+@media (min-width: 300px) and (max-width: 968px){
+    .three {
+        height: 80vh;
+    }
+    .three .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .three .container .div1{
+        margin-bottom: 40px;
+    }
+
+}
+
+.three .container .div1{
+    display: flex;
+    flex-direction: row;
+}
+
+.three .container .div1 i{
+    font-size: 35px; 
+    margin-right: 15px;
+    color: #7303bd;
+}
+
+.three .container .div1 h3{
+    color: #575656;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.three .container .div1 p{
+    line-height: 1.4;
+    color: #fff;
+}
+/*end iocns*/
+/*images*/
+.images{
+    width: 100;
+    height: 85vh;
+    background-image: linear-gradient(#333, #444, #333);
+    position: relative;
+}
+
+.images::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    background-color: rgb(119, 116, 116);
+    z-index: 2;
+}
+
+.images .container{
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+@media (min-width: 300px) and (max-width: 968px){
+    .images {
+        height: 100vh;
+    }
+    .images .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .images .container .img{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+}
+
+
+.images .container .img{
+    width: 31%;
+    height: 500px;  
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.images .container .img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+   
+}
+
+.images .container .img img:hover{
+    transform: scale(1.1);
+}
+
+/*.images .container .img .shaf{
+    position: absolute;
+    top: 0;
+     --R A W--
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}*/
+
+.images .container .img .hh{
+    position: absolute;
+    bottom: 15px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.images .container .img .hh h3{
+    font-size: 35px;
+    font-weight: 100;
+    margin-top: 5px;
+}
+/*end images*/
+/*cards*/
+.cards{
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(#333, #444);
+    
+}
+
+.cards .container{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    padding-top: 40px;
+    
+}
+
+.cards .container .h{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #4d4c4c;
+    color: #fff;
+}
+
+.cards .container .h::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #6905ac;
+    position: absolute;
+    top: 15px;
+}
+
+.cards .container .card-s{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .container .card{
+    width: 30%;
+    height: 470px;
+    box-shadow: 5px 5px 10px #07030c;
+    background-color: #fff;
+}
+
+.cards .container .card img{
+    width: 100%;
+    height: 50%;
+}
+
+.cards .container .card .text{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards .container .card .text h4{
+    color: #9e00e2;
+}
+
+.cards .container .card .text p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #6d6c6c;
+}
+
+.cards .container .icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards .container .icon i{
+    font-size: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+/*end cards*/
+/*Big sale*/
+.Big{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( #444, #333, #444);
+}
+
+.Big .container{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.Big .container .h{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+@media (min-width: 300px) and (max-width: 968px){
+    .Big {
+        height: 150vh;
+    }
+    .Big .container .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+.Big .container .h::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #6905ac;
+    position: absolute;
+    top: 30px;
+}
+
+.Big .container .content{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.Big .container .content .img{
+    width: 60%;
+    height: 450px;
+    
+}
+
+.Big .container .content .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.Big .container .content .text{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Big .container .content .text h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #8100b8;
+}
+
+.Big .container .content .text h5{
+    font-size: 13px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.Big .container .content .text h5 span{
+    font-size: 14.8px;
+    color: #8100b8;
+}
+
+.Big .container .content .text p{
+    text-align: center;
+    line-height: 1.5;  
+    color: #fff;
+}
+
+.Big .container .content .text button{
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #8100b8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.Big .container .content .text button:hover{
+    box-shadow: 5px 5px 10px #dddddd;
+}
+/*end Big sale*/
+/*footer*/
+footer{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient( #444, #333, #444);
+}
+
+footer .container{
+    width: 85%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+footer .container div h3{
+   margin-bottom: 20px;
+   color: #fff;
+}
+
+footer .container div h5{
+    line-height: 3;
+    color: #fff;
+}
+
+footer .container .div4 img{
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+footer .container .div4 h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: #8100b8;
+    line-height: 1;
+}
+
+footer .container .div4 h5{
+    font-size: 13px;
+    color: #fff;
+}
+
+footer .container .div5 .col, .phone, .email{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+footer .container .div5 p{
+    margin-left: 15px;
+    color: #fff;
+}
+
+footer .container .div5 .input{
+    width: 200px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 0;
+    position: relative;
+}
+
+footer .container .div5 i{
+    color: #6d00b6;
+}
+
+footer .container .div5 .input p{
+    font-size: 18px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+footer .container .div5 .input input[type="email"]{
+    width: 100%;
+    height: 50%;
+    font-size: 15px;
+}
+
+footer .container .div5 .input input[type="submit"]{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    right: 1px;
+    background-color: #6d00b6;
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer .an{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+footer .an span{
+    color: #9900ff;
+}
+
+@media (min-width: 500px) and (max-width: 868px){
+    .div2, .div3, .div1{
+        display: none;
+    }
+}
+/*end footer*/
